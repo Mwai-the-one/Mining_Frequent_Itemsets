@@ -1,5 +1,5 @@
-                                               📦 Supermarket Transaction Mining Project
-                                Frequent, Closed, and Maximal Itemset Generation Using the Apriori Algorithm
+📦 Supermarket Transaction Mining Project
+Frequent, Closed, and Maximal Itemset Generation Using the Apriori Algorithm
 
 
 📘 Project Overview

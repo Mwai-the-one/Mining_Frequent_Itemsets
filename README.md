@@ -1,5 +1,6 @@
-📦 Supermarket Transaction Mining Project
-Frequent, Closed, and Maximal Itemset Generation Using the Apriori Algorithm
+                                               📦 Supermarket Transaction Mining Project
+                                Frequent, Closed, and Maximal Itemset Generation Using the Apriori Algorithm
+
 
 📘 Project Overview
 This project demonstrates a complete workflow for market basket analysis using simulated supermarket transaction data.
@@ -19,14 +20,18 @@ Saving full results to CSV
 
 The work was collaboratively completed by group members (A–E) as part of a Data Mining practical assignment.
 
+
 🧰 Technologies & Libraries Used
+
 Purpose	                                     Library
 Data manipulation	                           pandas,numpy
 Randomized simulations	                     random
 Transaction encoding	                       mlxtend.preprocessing.TransactionEncoder
 Frequent itemset mining	                     mlxtend.frequent_patterns.apriori
 
+
 📂 Project Structure
+
 ├── supermarket_transactions.csv          # Raw simulated transactions
 ├── frequent_itemsets.csv                 # All frequent itemsets (support ≥ 0.05)
 ├── closed_itemsets.csv                   # Closed frequent itemsets
@@ -35,8 +40,10 @@ Frequent itemset mining	                     mlxtend.frequent_patterns.apriori
 
 🧾 Step-by-Step Explanation of the Code
 
+
 🧑‍🎓 1. Import Libraries
 Handles data manipulation, random sampling, encoding, and mining.
+
 
 🛒 2. Simulating Supermarket Transaction Data
 
@@ -48,6 +55,7 @@ A list of 30+ unique supermarket items is created (milk, bread, meat, beverages,
 Each transaction contains 2 to 7 random items, sampled without replacement.
 This mimics real-world shopping behavior.
 
+
 🧼 3. Preprocessing via One-Hot Encoding
 
 This produces a DataFrame where:
@@ -58,6 +66,7 @@ Example:
 
 Milk	Bread	Eggs	Soda	
 True	False	True	False
+
 
 📊 4. Frequent Itemset Mining (Apriori Algorithm)
 
@@ -74,6 +83,7 @@ Example record:
 itemsets	support	length
 {Bread}	0.41	1
 
+
 🔐 5. Closed Frequent Itemsets
 
 ⭐ Definition
@@ -89,6 +99,7 @@ Check if any superset shares identical support.
 If yes → Not Closed
 If no → Closed
 
+
 🏆 6. Maximal Frequent Itemsets
 
 ⭐ Definition
@@ -103,6 +114,7 @@ For each frequent itemset:
 Check if there exists any strict superset.
 If none exist → itemset is maximal.
 
+
 📁 Generated Output Files
 
 | File                           | Description                         |
@@ -111,6 +123,7 @@ If none exist → itemset is maximal.
 | `frequent_itemsets.csv`        | All frequent itemsets ≥ 5% support  |
 | `closed_itemsets.csv`          | Closed frequent itemsets            |
 | `maximal_itemsets.csv`         | Maximal frequent itemsets           |
+
 
 🎉 Conclusion
 

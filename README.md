@@ -126,6 +126,7 @@ We used the `mlxtend.frequent_patterns.apriori` function.
 ├── frequent_itemsets.csv           # OUTPUT: All itemsets with support > 0.05
 ├── closed_itemsets.csv             # OUTPUT: Subset of itemsets that are Closed
 └── maximal_itemsets.csv            # OUTPUT: Subset of itemsets that are Maximal
+```
 ## 5. Installation & Usage
 To run this project locally, ensure you have Python installed.
 
